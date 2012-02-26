@@ -71,7 +71,11 @@ footer li:first-child::after {
 	content: " / ";
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus,
+footer a:active {
 	color: inherit;
 	text-decoration: underline;
 }
+
+a:focus, a:active
