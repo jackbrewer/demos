@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Animated CSS Progress Bar</title>
+
+		<!-- CSS -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../base.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/progress-bar.css">
+
+	</head>
+	<body>
+	<header>
+		<h1>Animated CSS Progress Bar</h1>
+	</header>
+	<article>
+		<p>There are countless examples of people making progress bars using nothing but CSS - this one is different.</p>
+		<p>There are no images, the HTML is as extremely minimal and the animation is handled by a pseudo element. Unfortunately this means it's <strong>only animated in Firefox</strong> for now.</p>
+		<div class="example">
+			<div role="progressbar">85% Complete</div>
+<style contenteditable>[role="progressbar"]:after {
+  /* Edit this width to animate (in Firefox) */
+  width: 85%;
+}
+</style>
+		</div>
+		<p>This is the only example I have seen so far that makes use of a negative background-position to animate the colour of the bar from red, through orange and yellow, to green &mdash; depending on the amount of progress made.</p>
+		<h2>Pros</h2>
+		<p>The markup is beautiful! No wrapping or empty elements.</p>
+		<pre><code contenteditable>&lt;div role="progressbar"&gt;85% Complete&lt;/div&gt;</code></pre>
+		<p>Switching the <code>&lt;div role="progressbar"&gt;</code> for a <code>&lt;progress value="85%" max="100%"&gt;</code> would make this semantically better but browser support for styling progress elements is extremely poor at the moment.</p>
+		<p>An actual implementation of this would also need some method of updating the value(s) within the markup.</p>
+		<p></p>
+		<h2>Cons</h2>
+		<p>This is a prototype that is not yet ready to be unleashed on the world. I have set up this demo to animate using CSS transitions whereas a real implementation would probably need some JavaScript interaction to dynamically calculate the users actual progress. Using JS to handle the animation would also negate some of the browser compatibility issues which the :after pseudo element causes.</p>
+		<p>I could have also increased browser support for this demo by using extra markup instead of pseudo elements but this goes against what I was trying to achieve.</p>
+	</article>
+
+	<footer>
+		<small>Made by Jack Brewer</small>
+		<ul>
+			<li><a href="https://github.com/jackbrewer">GitHub</a></li>
+			<li><a href="https://twitter.com/jackbrewer">Twitter</a></li>
+		</ul>
+		<a href="http://jackbrewer.github.com/demos/progressbar"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+	</footer>
+
+	</body>
+</html>
