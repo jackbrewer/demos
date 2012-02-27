@@ -16,6 +16,11 @@ article {
 	padding-top: 10px;
 }
 
+p.note {
+	font-size: 0.875em;
+	font-weight: 400;
+}
+
 pre code,
 style {
 	display: block;

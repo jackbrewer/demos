@@ -26,7 +26,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h1 {
@@ -34,6 +34,7 @@ h1 {
 	text-align: center;
 	margin: 1.6em 0 1em;
 	color: #ccc;
+	font-weight: 300;
 	-webkit-text-shadow:0px 1px 2px #222;
 	   -moz-text-shadow:0px 1px 2px #222;
 	    -ms-text-shadow:0px 1px 2px #222;
