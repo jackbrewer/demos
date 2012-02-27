@@ -1,3 +1,4 @@
+/* Grey Wrapping Bar */
 [role="progressbar"] {
 	position: relative;
 	width: 400px; /* Use this value when setting background-size on :after */
@@ -13,6 +14,7 @@
 	        box-shadow: 0 0 1px #aaa, 0 0px 1px 1px #ccc, 0 1px 2px 1px #fff, 0 -1px 2px 1px #aaa;
 }
 
+/* Coloured Progress Bar */
 [role="progressbar"]:after {
 	content: "";
 	position: absolute;
