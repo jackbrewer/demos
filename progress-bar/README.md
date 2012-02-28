@@ -4,4 +4,4 @@
 
 An interactive demo for my CSS only progress bar.
 
-[View Demo](http://jackbrewer.github.com/demos/progress-bar)
+[View Demo](http://jackbrewer.co.uk/progress-bar)

@@ -82,3 +82,10 @@ footer a:active {
 	color: inherit;
 	text-decoration: underline;
 }
+
+/* Misc Styles */
+
+ul.demo-list li {
+	font-weight: 400;
+	list-style-type: circle;
+}
