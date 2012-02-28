@@ -71,6 +71,18 @@ a:active {
 	outline: none;
 }
 
+h1 a {
+	padding: 3px 10px;
+	border-radius: 2px;
+	color: #ccc;
+}
+h1 a:hover,
+h1 a:active,
+h1 a:focus {
+	color: #ccc;
+	background-color: rgba(255,255,255,.05);
+}
+
 pre, code, kbd, style {
 	font-size: .875em;
 	font-family: Monaco, "Courier New", Courier, monospace;
