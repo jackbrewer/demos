@@ -13,7 +13,8 @@ article {
 }
 
 .example {
-	padding-top: 10px;
+
+	margin-bottom: 1.5em;
 }
 
 p.note {
@@ -88,4 +89,10 @@ footer a:active {
 ul.demo-list li {
 	font-weight: 400;
 	list-style-type: circle;
+}
+
+/* Extra Demo specific layout styles */
+
+.progress-bar .example {
+	padding-top: 10px;
 }
