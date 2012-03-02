@@ -23,7 +23,7 @@ p.note {
 }
 
 pre code,
-style {
+body article style {
 	display: block;
 	white-space: pre;
 	background: #dfdfdf;
