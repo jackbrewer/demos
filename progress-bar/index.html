@@ -34,14 +34,13 @@
 			<pre><code contenteditable>&lt;div role="progressbar"&gt;85% Complete&lt;/div&gt;</code></pre>
 			<p>Switching the <code>&lt;div role="progressbar"&gt;</code> for a <code>&lt;progress value="85%" max="100%"&gt;</code> would make this semantically better but browser support for styling progress elements is extremely poor at the moment.</p>
 			<p>An actual implementation of this would also need some method of updating the value(s) within the markup.</p>
-			<p></p>
 			<h2>Cons</h2>
 			<p>This is a prototype that is not yet ready to be unleashed on the world. I have set up this demo to animate using CSS transitions whereas a real implementation would probably need some JavaScript interaction to dynamically calculate the user's actual progress. Using JS to handle the animation would also negate some of the browser compatibility issues which the :after pseudo element causes.</p>
 			<p>I could also have increased browser support for this demo by using extra markup instead of pseudo elements but this goes against what I was trying to achieve.</p>
 		</article>
 
 		<footer>
-			<small>Made by Jack Brewer</small>
+			<small>Made by <a href="http://jackbrewer.co.uk">Jack Brewer</a></small>
 			<ul>
 				<li><a href="https://github.com/jackbrewer">GitHub</a></li>
 				<li><a href="https://twitter.com/jackbrewer">Twitter</a></li>

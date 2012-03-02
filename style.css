@@ -76,6 +76,9 @@ footer li {
 footer li:first-child::after {
 	content: " / ";
 }
+footer a {
+	color: #bbb;
+}
 
 footer a:hover,
 footer a:focus,
@@ -83,6 +86,11 @@ footer a:active {
 	color: inherit;
 	text-decoration: underline;
 }
+
+footer small a {
+	color: #20a5ba;
+}
+
 
 /* Misc Styles */
 
