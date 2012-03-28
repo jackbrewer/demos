@@ -7,60 +7,39 @@
 		<!-- CSS -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="../base.css">
-		<link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="css/article.css">
 
 		<!-- This is probably the stylesheet you are looking for -->
 		<link rel="stylesheet" href="css/iphone.css">
 
 	</head>
 	<body class="iphone-icon">
+
 		<header>
-			<h1>CSS iPhone Icon</h1>
+			<h1><a href="http://jackbrewer.co.uk">Jack Brewer</a></h1>
 		</header>
+
 		<article>
-			<p>This is the result of a long evening playing with box shadows and gradients &mdash; an iPhone icon made with CSS.</p>
+			<h1>CSS iPhone Icon</h1>
 			<div class="example">
 				<span class="iphone">iPhone</span>
 			</div>
-			<p class="note">Make sure you hover for yet more outrageously complicated styling.</p>
-			<p>You've probably seen similar experiments where people have used hundreds of empty <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements to recreate similar details to a pixel perfect level. I decided to take a different approach and write my optimal HTML first.</p>
-			<pre><code>&lt;span class="iphone"&gt;iPhone&lt;/span&gt;</code></pre>
-			<p>Although limiting, I still managed to achieve a fairly impressive result using this one element and its <code>:before</code> and <code>:after</code> pseudo elements. The <code>&lt;span&gt;</code> element itself forms the iPhone body, the <code>:after</code> pseudo element handles the lock / home screen whilst the <code>:before</code> pseudo element forms the home button.</p>
-			<p>The bulk of the styling makes use of multiple background gradients, sizes and positions. Combine that with the fact that every CSS3 property is duplicated 5 times with various vendor prefixes and the overall CSS file length of 200 lines doesn't seem too crazy.</p>
-			<p>Here is the exact same icon, this time scaled up three times to allow you to see the finer details (or lack of).</p>
-			<div class="example">
-				<span class="iphone zoom">iPhone</span>
-			</div>
-			<p>There is a tiny amount of JavaScript in use on this demo &mdash; it updates the <code>:after</code> pseudo element's <code>content</code> property to ensure the icon is always displaying the correct time.</p>
-			<p>You may also notice at this zoom level that the icon is modelled on an iPhone 3GS &mdash; this demo has been living on my hard drive for a while!</p>
-			<p><strong>Disclaimer:</strong> This is an experiment and was a great learning experience. I would never recommend using something this complicated or pointless on an actual site.</p>
-		</article>
 
+		</article>
 		<footer>
-			<small>Made by <a href="http://jackbrewer.co.uk">Jack Brewer</a></small>
+			<p class="actions">
+				<a href="http://jackbrewer.co.uk/css-iphone-icon" class="button">Find Out More</a>
+				<a href="https://github.com/jackbrewer/demos/tree/gh-pages/css-iphone-icon" class="button">Source on GitHub</a>
+			</p>
+			<small>Demo by <a href="http://jackbrewer.co.uk">Jack Brewer</a></small>
 			<ul>
 				<li><a href="https://github.com/jackbrewer">GitHub</a></li>
 				<li><a href="https://twitter.com/jackbrewer">Twitter</a></li>
 			</ul>
-			<a href="https://github.com/jackbrewer/demos/tree/gh-pages/iphone-icon"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
 		</footer>
 
-		<!-- Display the correct Time on the icon -->
-		<script>
-			var style = document.createElement('style'),
-			    head = document.getElementsByTagName('head')[0];
-			function setTime() {
-				var now = new Date(),
-				    hour = now.getHours(),
-				    minute = now.getMinutes();
-				if (hour < 10) { hour = '0' + hour; }
-				if (minute < 10) { minute = '0' + minute; }
-				style.innerHTML = '.iphone:after{content:"' + hour + ':' + minute +'"}';
-				head.appendChild(style);
-				setTimeout(setTime, 1000);
-			};
-			setTime();
-		</script>
+		<!-- Set the correct time -->
+		<script src="js/iphone.js"></script>
 
 		<!-- Google Analytics -->
 		<script type="text/javascript">

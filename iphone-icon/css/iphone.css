@@ -17,8 +17,7 @@
 	height: 71px;
 	margin: auto;
 	text-indent: -9999px;
-	/* Earpiece colour */
-	background-color: #555;
+	background-color: #555; /* Earpiece colour */
 	border: 1px solid #bbb;
 	border-radius: 5px;
 	/* Outer mid-grey sharp border, blurred drop-shadow effect, 2x black inset shadows (no blur) which combine to mask all background-colour other than the earpiece */
@@ -54,8 +53,7 @@
  */
 
 .iphone:after {
-	/* Sets the default time value */
-	content:"9:42";
+	content:"9:41"; /* Sets the default time value */
 	position: absolute;
 	left: 3px;
 	top:11px;

@@ -1,0 +1,25 @@
+body {
+	background-image: url("../images/osx-linen.png");
+	background-position: -50% -50%;
+	background-repeat: repeat;
+}
+
+article {
+	width: 320px;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+}
+
+article h1 {
+	color: #fff;
+	-webkit-text-shadow:0px 1px 2px #222;
+	   -moz-text-shadow:0px 1px 2px #222;
+	    -ms-text-shadow:0px 1px 2px #222;
+	     -o-text-shadow:0px 1px 2px #222;
+	        text-shadow:0px 1px 2px #222;
+}
+
+.example {
+	margin-bottom: 60px;
+}
