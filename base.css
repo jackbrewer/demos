@@ -226,10 +226,24 @@ header a {
 	overflow: hidden;
 }
 
+.minimal header {
+	position: static;
+	margin: 80px auto;
+}
+
+.minimal header h1 {
+	margin: 0 auto;
+}
+
 article {
 	width: 500px;
 	margin: 40px auto 0;
 	padding: 0px 40px;
+}
+
+.minimal article {
+	width: 450px;
+	text-align: center;
 }
 
 article h1 {
