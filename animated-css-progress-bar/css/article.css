@@ -1,0 +1,21 @@
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	background-color: #d1dbd9;
+	background-image: -webkit-radial-gradient(50% 260px, circle cover, rgba(255,255,255,1), rgba(255,255,255,0));
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	min-height: 100%;
+}
+
+article {
+	max-width: 500px;
+	width: auto;
+}
+
+article .example {
+	margin-bottom: 4em;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Animated CSS Progress Bar</title>
+
+		<!-- CSS -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../base.css">
+		<link rel="stylesheet" href="css/article.css">
+
+		<!-- This is probably the stylesheet you are looking for -->
+		<link rel="stylesheet" href="css/progress-bar.css">
+
+	</head>
+	<body class="progress-bar">
+
+		<header>
+			<h1><a href="http://jackbrewer.co.uk">Jack Brewer</a></h1>
+		</header>
+
+		<article>
+			<h1>Animated CSS Progress Bar</h1>
+			<div class="example">
+				<div role="progressbar">85% Complete</div>
+			</div>
+<style contenteditable>[role="progressbar"]:after {
+  width: 85%;
+}
+</style>
+			<p class="note">The CSS above is interactive &mdash; change the width value in Firefox to see the animation in action.</p>
+		</article>
+
+		<footer>
+			<p class="actions">
+				<a href="http://jackbrewer.co.uk/css-progress-bar" class="button">Find Out More</a>
+				<a href="https://github.com/jackbrewer/demos/tree/gh-pages/css-progress-bar" class="button">Source on GitHub</a>
+			</p>
+			<small>Demo by <a href="http://jackbrewer.co.uk">Jack Brewer</a></small>
+			<ul>
+				<li><a href="https://github.com/jackbrewer">GitHub</a></li>
+				<li><a href="https://twitter.com/jackbrewer">Twitter</a></li>
+			</ul>
+		</footer>
+
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-18082762-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+	</body>
+</html>

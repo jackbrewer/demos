@@ -2,10 +2,10 @@
 [role="progressbar"] {
 	position: relative;
 	width: 400px; /* Use this value when setting background-size on :after */
-	height: 20px;
+	height: 24px;
 	margin: 0 auto;
 	text-indent: -9999px;
-	border-radius: 10px;
+	border-radius: 100px;
 	background-color: #ccc;
 	-webkit-box-shadow: 0 0 1px #aaa, 0 0px 1px 1px #ccc, 0 1px 2px 1px #fff, 0 -1px 2px 1px #aaa;
 	   -moz-box-shadow: 0 0 1px #aaa, 0 0px 1px 1px #ccc, 0 1px 2px 1px #fff, 0 -1px 2px 1px #aaa;
@@ -21,11 +21,11 @@
 	top: 0;
 	left: 0;
 	display: block;
-	height: 20px;
+	height: 24px;
 	width: 0%;
 	max-width: 100%;
 	min-width: 5%;
-	border-radius: 20px;
+	border-radius: 200px;
 	background-color: #8be543; /* Fallback Colour */
 
 	/* First Gradient: Horizontal white to transparent gloss effect
